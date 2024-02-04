@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron Configuration</title>
+</head>
+
+<style>
+  * {
+    font-family: 'SF Pro', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  body {
+    background-color: #929ebb;
+    color: #efefef;
+    margin-left: 5%;
+    margin-top: 7%;
+    font-size: 130%;
+  }
+
+  input[type='text'] {
+    font-size: 120%;
+  }
+
+  input[type='submit'] {
+    font-size: 120%;
+  }
+
+  a:link, a:visited {color: #B34C60; transition: 0.2s;}
+  a:hover {color:#C27080;}
+</style>
+
+<body>
+  <h2>Get Electron Configuration of Elements</h2>
+  <input type="text" placeholder="Name, Symbol, Z" id="in">
+  <input type="submit" onclick="getConfig(document.getElementById('in').value)" value="Get Config">
+  <br><h4>Made by <a href="https://beacons.ai/lef2564">lef</a></h4>
+  <div id="out"></div>
+
+  <script src="shells.js"></script>
+</body>
+</html>
